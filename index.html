@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/451/fabric.min.js"
+      integrity="sha512-qeu8RcLnpzoRnEotT3r1CxB17JtHrBqlfSTOm4MQzb7efBdkcL03t343gyRmI6OTUW6iI+hShiysszISQ/IahA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <script src="http://rawgit.com/bramstein/fontfaceobserver/master/fontfaceobserver.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <script src="template.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col col-8 col-md-9"
+            id="canvasContainer"
+            style="height:300px"
+          >
+            <img src="" id="mainImageElement" class="img-fluid" />
+          </div>
+
+          <div class="col col-md-3">
+            <div class="row">
+              <div class="col">
+                <label>Change background image </label>
+                <input type="file" id="background" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="row">
+                <div class="col" id="templateImageElements"></div>
+              </div>
+              <div class="row">
+                <div class="col" id="templateTextElements"></div>
+              </div>
+            </div>
+
+            <!-- <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Text 2</label>
+            <textarea onkeyup="updateText(this)" class="form-control" id="text" rows="3"></textarea>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
